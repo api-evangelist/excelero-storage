@@ -12,13 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/excelero-storage.png
 name: Excelero Storage
-description: Excelero was a software-defined storage company whose flagship product, NVMesh, delivered
-  distributed, low-latency shared NVMe block storage across a server cluster with a Kubernetes CSI driver
-  and a management CLI. Excelero was acquired by NVIDIA in 2022 and no longer operates as an independent
-  company; its NVMesh product and documentation are now part of NVIDIA. The former excelero.com domain
-  301-redirects to nvidia.com/en-us/excelero/. This profile was surfaced as a battery-ventures portfolio
-  company; the enrichment pipeline found no independent Excelero API, OpenAPI specification, or developer
-  portal to harvest.
+description: Excelero was a software-defined storage company whose flagship product, NVMesh, delivered distributed,
+  low-latency shared NVMe block storage across a server cluster with a Kubernetes CSI driver and a management CLI.
+  Excelero was acquired by NVIDIA in 2022 and no longer operates as an independent company; its NVMesh product and
+  documentation are now part of NVIDIA. The former excelero.com domain 301-redirects to nvidia.com/en-us/excelero/.
+  This profile was surfaced as a battery-ventures portfolio company; the enrichment pipeline found no independent
+  Excelero API, OpenAPI specification, or developer portal to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/excelero-storage/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -31,7 +30,7 @@ x-acquired-by: nvidia
 x-acquired-year: 2022
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-21'
 tags:
 - Company
 - Storage
@@ -41,6 +40,12 @@ tags:
 - Kubernetes
 - Acquired
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/nvidia/
+  name: Nvidia
+  x-relationship: acquisition
+  x-generated-by: nvidia-family:2026-08-21
+  x-acquired: 2022
 - type: Website
   url: https://www.nvidia.com/en-us/excelero/
 - type: Documentation
@@ -56,3 +61,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: nvidia
+x-relationship: acquisition
+x-acquired: 2022
